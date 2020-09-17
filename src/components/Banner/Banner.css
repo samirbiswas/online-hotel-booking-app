@@ -1,0 +1,28 @@
+.background{
+   
+    height: 550px;
+   
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 50%), url(https://i.imgur.com/RFvwiiS.jpg/);
+   
+   
+}
+.margin-right img{
+   height: 400px;
+   border-radius: 25px;
+   margin-right: -30px;
+   border: 2px solid rgba(255, 158, 14, 0.836);
+   margin: 1px;
+   margin-top: 80px;
+   
+}
+.margin-right{
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    padding-left: 20px;
+   
+  }
