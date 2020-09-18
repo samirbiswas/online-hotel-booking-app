@@ -15,7 +15,7 @@ const Details = () => {
        
             <div className='container'>
                 <div className='background'>
-            <div className='row'>
+            <div className='row '>
                 
                 <DetailsInfo data={data}></DetailsInfo>
                 </div>

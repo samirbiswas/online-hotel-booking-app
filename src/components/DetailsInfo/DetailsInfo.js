@@ -22,24 +22,28 @@ const DetailsInfo = (props) => {
 
              </div>
 
-             <div className='col-4 form-design'>
+        <div className=' col-sm-6 col-md-3'>
                 
-            <form action="" >
-                <div > 
-                <input type="text" placeholder='From' required/>
-                <br/>
-                <input type="text" placeholder='To' required/>
-                <br/>
-                
-                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-                <br/>
-                
-                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-                <br/>
-                <button onClick={() => handleBook(id)}  variant="contained" color="primary" >Booking</button>
-                </div>
-                </form>
-             </div>
+            <form className='form-design'>
+            
+                    <div class="form-group">
+                    
+                    <input type="email" class="form-control"  placeholder="Origin"></input>
+                    </div>
+                    <div class="form-group">
+                  
+                    <input type="password" class="form-control" placeholder="Distination"></input>
+                    </div>
+                    <label for="exampleInputEmail1">From</label>
+                    <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+                    <label for="exampleInputEmail1">To</label>
+                        
+                    <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+                        <br/>
+                    <button onClick={() => handleBook(id)}  variant="contained" color="primary" >Booking</button>
+               
+            </form>
+        </div>
              
              
         </div>

@@ -22,7 +22,16 @@ const Header = () => {
 
   <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-      
+    <li className="nav-item">
+        <a className="nav-link" href="#">Distination</a>
+      </li>
+    <li className="nav-item">
+        <a className="nav-link" href="#">News</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Contact</a>
+      </li>
+
       <li className="nav-item">
         <Link
         to='/blog' 

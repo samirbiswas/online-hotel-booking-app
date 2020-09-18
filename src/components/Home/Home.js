@@ -8,9 +8,10 @@ const Home = () => {
    
     return (
         
-        <div className='background'>
-            <h5>COX'S Bazar</h5>
-        <div className="container">
+        <div className='container'>
+            
+        <div className="background">
+           
             <div className ="row margin-a">
             {data.map(da=> <Banner key={da.id} data={da} ></Banner>)}
            

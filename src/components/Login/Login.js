@@ -158,32 +158,40 @@ const updateName = (name)=>{
 
 
     return (
+      
         <div className="login-info">
-
+            <h4>Create User</h4>
+            <br/>
             <div>
                 <input type="checkbox" onChange={()=> setNewUser(!newUser)} name="newUser" id=""/>
                         <label htmlFor="newUser">Sign Up Here </label>
                 <form onSubmit={handleSubmit}>
-                    {newUser && <input type="text" name="name" onBlur={handleChange} placeholder="emter your name" required/>}
-                    <br/>
-                    <input type="text" name="email" onBlur={handleChange} placeholder="emter your email " required/>
-                    <br/>
-                    <input type="password" name="password" onBlur={handleChange} placeholder="emter your password" required/>
-                    <br/>
-                    <input type="submit" value="Submit"/>
+                <div className="form-group">
+                {newUser && <input className="form-group" type="text" name="name" onBlur={handleChange} placeholder="Enter your name" required/>}
+                  </div>
+                  <div className="form-group">
+                  <input className="form-group" type="text" name="email" onBlur={handleChange} placeholder="Enter your email " required/>
+                    </div>
+                    <div className="form-group">
+                    <input className="form-group" type="password" name="password" onBlur={handleChange} placeholder="Enter your password" required/>
+                      </div>
+                    
+                      <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
                 <p style={{color:'red'}}>{user.error}</p>
                 {user.success && <p style={{color:'green'}}>User {newUser ? 'created' :'Logged IN'} Successfully</p>}
                  
             </div>
             
-            <div >
-                <button onClick={googleHandleClicked}>SignIn With Google</button>
-                <br/>
-                <button onClick={facebookHandleClicked}>SignIn With Facebook</button>
+            <div className="icon-settings d-flex justify-content-between">
+              <img onClick={googleHandleClicked}  src="https://i.imgur.com/VUiCSkt.png"  alt=""/>
+              
+              <img onClick={facebookHandleClicked} src="https://i.imgur.com/kj9UFt0.png" alt=""/>
+  
             </div>
             
         </div>
+      
     );
 };
 

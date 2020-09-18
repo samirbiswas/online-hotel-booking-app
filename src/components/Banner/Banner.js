@@ -7,7 +7,8 @@ const Banner = (props) => {
    
 
     return (
-        <div className="">
+        <div className="col-4">
+           
                 <div className= 'col-md-8 margin-right'>
                         <div className="image-text">
                             <Link to={`/room/${id}`}>
