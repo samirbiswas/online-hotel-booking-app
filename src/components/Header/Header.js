@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import logo from '../../Logo.png'
 
 import './Header.css'
 
 
 const Header = () => {
+  const [loggesinUser, setLoggedInUser] = useContext(UserContext);
   
  
     return (
@@ -27,11 +29,12 @@ const Header = () => {
       </li>
     <li className="nav-item">
         <a className="nav-link" href="#">News</a>
+       
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Contact</a>
       </li>
-
+      
       <li className="nav-item">
         <Link
         to='/blog' 
@@ -39,6 +42,9 @@ const Header = () => {
       </li>
       <li className="nav-item">
         <Link to='/login' className="nav-link">Login</Link>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link user-name" href="#"> {loggesinUser.displayName}</a>
       </li>
     </ul> 
     
