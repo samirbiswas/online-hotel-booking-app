@@ -6,7 +6,7 @@
 * User can login with Facebook, Google account or Email.
 * After login user can see the hotels in their selected place and see the map.
 
-## Thonology
+## Technology
 * React,
 * NodeJs,
 * expressJS,
